@@ -3,7 +3,7 @@ int M1 = 12;
 int E2 = 11;
 int M2 = 13;
 
-drive(int speed_l,int speed_r) {
+void drive(int speed_l,int speed_r) {
   // use analogwrite and so on
 }
 
