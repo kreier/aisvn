@@ -1,5 +1,9 @@
 distro: xenial
 language: c
+cache:
+  directories:
+    - ~/arduino_ide
+    - ~/.arduino15/packages/
 git:
   depth: false
   quiet: true
@@ -15,9 +19,6 @@ addons:
 before_install:
   - source <(curl -SLs https://raw.githubusercontent.com/adafruit/travis-ci-arduino/master/install.sh)
   - curl -SLs https://raw.githubusercontent.com/adafruit/travis-ci-arduino/master/run-clang-format.py > run-clang-format.py
-
-install:
-   - arduino --install-library "LiquidCrystal_I2C"
  
 script:
    - python run-clang-format.py -r .
