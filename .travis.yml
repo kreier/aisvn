@@ -18,9 +18,8 @@ addons:
 env:
   global:
      - ARDUINO_IDE_VERSION="1.8.10"
-     - PRETTYNAME="Adafruit FT6206 Arduino Library"
-     - INSTALL_PLATFORMS="leonardo","uno","mega2560"      # "esp8266","esp32"
-     - MAIN_PLATFORMS="leonardo","uno"      # "esp8266","esp32"
+#     - INSTALL_PLATFORMS="leonardo","uno","mega2560"      # "esp8266","esp32"
+#     - MAIN_PLATFORMS="leonardo","uno"      # "esp8266","esp32"
 # Optional, will default to "$TRAVIS_BUILD_DIR/Doxyfile"
 #    - DOXYFILE: $TRAVIS_BUILD_DIR/Doxyfile
 
