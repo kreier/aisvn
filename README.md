@@ -23,27 +23,50 @@ Back in 2017 we started to build our first remote controlled robots during club 
 
 ### T500
 
+`2020/04/04`
+
+https://github.com/kreier/T500
+
 The base has 3 motors with encoders and the robot is controlled by a raspberry Pi 3 with a 7" IPS screen and a camera with object detection. Might be upgraded to a NVIDIA Jetson Nano, but that's all future.
 
+The 3 motors allow for driving in all directions simultanously without turning the robot around. Achieved in the beginning of 2020?
+
 ### T400
-<img src="https://github.com/kreier/T300/raw/master/docs/T400-20191119.jpg" width='30%' align='right'>
+
+<img src="https://raw.githubusercontent.com/kreier/T400/master/pic/T400lite.jpg" width='25%' align='right'>
+
+`2020/02/02`
+
+https://github.com/kreier/T400
 
 In session 3 for ASA this year we upgraded both motor unit and control unit. Now we have 12V DC motors that work much better with PWM and slow rpm. And it is controled by the much more powerful esp8266. With included WiFi. And we can program it with micropython. 
 
 #### REPL
 Another advantage: We now have REPL - the time from program instruction to execution is down to less than a second!
 
-### T300
-<img src="https://github.com/kreier/T300/raw/master/docs/T300-20191119.jpg" width='30%' align='right'>
+There is another T410 that is controlled by an Raspberry Pi 1. And a slightly larger T420 that is controlled by a NVIDIA Jetson Nano with 128 CUDA cores to run tensorflow for object detection, classification and other neural networks stuff.
 
-For the second ASA session 2019/2020 we upgraded our robot car with a 4 DOF robot arm. The code had to be expanded as well.
+### T300
+
+<img src="https://github.com/kreier/T300/raw/master/docs/T300-20191119.jpg" width='25%' align='right'>
+
+`2019/10/10`
+
+https://github.com/kreier/T300
+
+Our most ambitious project so far. For ASA session II we upgraded our robot car with a 4 DOF robot arm. The code had to be expanded as well. The total cost of all materials now sums to more that a million dong - or 45 dollars.
 
 It also includes an ultrasonic sensor for distance now. This was backported to ASA as well.
 
 ### ASA robot
-<img src="https://github.com/kreier/T300/raw/master/docs/asa-20191119.jpg" width='30%' align='right'>
 
-Time to get serious. 10 students signed up for ten Monday evening sessions to build their own robot car. At the end 6 working robots were produced.
+<img src="https://github.com/kreier/T300/raw/master/docs/asa-20191119.jpg" width='25%' align='right'>
+
+`2019/08/10`
+
+https://github.com/kreier/asa
+
+In ASA session I for 2019/2020 a total of 10 students signed up for our robotics and programming club. I created a list of desired materials and purcheased it for the students. After 9 weeks we had 6 working robots, controlled via bluetooth from the smartphones. And some students got into programming.
 
 ### T200
 
@@ -55,7 +78,7 @@ https://github.com/kreier/T200
 
 Now with PWM and controlled by an ESP32. The bluetooth connection is done by Bluetooth Low Energy (BLE) to be compatible with iOS and the many iPhones our students have.
 
-The software used is 
+The software used is https://apps.apple.com/us/app/goble-bluetooth-4-0-controller/id950937437 because it uses an analog control joystick for speed and direction. It required a reverse engineering of the protocol to make it compatable with the T200. In the end it worked!
 
 ### T100
 
