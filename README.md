@@ -1,5 +1,5 @@
 # AISVN Robot Platform
-[![MIT license](https://img.shields.io/github/license/kreier/aisvn)](https://kreier.mit-license.org/)
+[![MIT license](https://img.shields.io/github/license/kreier/aisvn?color=brightgreen)](https://kreier.mit-license.org/)
 [![Build Status](https://travis-ci.com/kreier/aisvn.svg?branch=master)](https://travis-ci.com/kreier/aisvn)
 [![HitCount](http://hits.dwyl.io/kreier/aisvn.svg)](http://hits.dwyl.io/kreier/aisvn)
 
@@ -30,6 +30,10 @@ https://github.com/kreier/T500
 The base has 3 motors with encoders and the robot is controlled by a raspberry Pi 3 with a 7" IPS screen and a camera with object detection. Might be upgraded to a NVIDIA Jetson Nano, but that's all future.
 
 The 3 motors allow for driving in all directions simultanously without turning the robot around. Achieved in the beginning of 2020?
+
+### T420
+
+### T410
 
 ### T400
 
@@ -79,6 +83,18 @@ https://github.com/kreier/T200
 Now with PWM and controlled by an ESP32. The bluetooth connection is done by Bluetooth Low Energy (BLE) to be compatible with iOS and the many iPhones our students have.
 
 The software used is https://apps.apple.com/us/app/goble-bluetooth-4-0-controller/id950937437 because it uses an analog control joystick for speed and direction. It required a reverse engineering of the protocol to make it compatable with the T200. In the end it worked!
+
+### T110
+
+`2018/10/13`
+
+https://github.com/kreier/T110
+
+Started in 2018 the robot should have been upgraded to Bluetooth 4.0 to work with iOS. This problem was easily solved by replacing the bluetooth module HC-05 with a AT-06 or anything with a CC2541 on it. Price is roughly the same.
+
+Therefore this robot was upgraded with the remote for the PS2. The wireless editions are easy to get, to make it work consistenly unfortunatly not.
+
+__Update 2019/09/25__ The control works, but looses connection all the time. Needs investigation!
 
 ### T100
 
