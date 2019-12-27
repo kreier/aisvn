@@ -25,7 +25,7 @@ Back in 2017 we started to build our first remote controlled robots during club 
 
 `2020/04/04`
 
-https://github.com/kreier/T500
+[github.com/kreier/T500](https://github.com/kreier/T500)
 
 The base has 3 motors with encoders and the robot is controlled by a raspberry Pi 3 with a 7" IPS screen and a camera with object detection. Might be upgraded to a NVIDIA Jetson Nano, but that's all future.
 
@@ -33,7 +33,15 @@ The 3 motors allow for driving in all directions simultanously without turning t
 
 ### T420
 
+`2020/03/05`
+
+Robot supercharged with AI: Object detection with camera, tensorflow, CUDA and openCV. Powered by a Nvidia Jetson Nano and output on a 7 inch 1024x600 IPS display. Took some time to get it going.
+
 ### T410
+
+`2020/03/03`
+
+Powered by a Raspberry Pi 1B with 3.5 inch 480x320 display for 80x25 characters at the terminal. 40 seconds to boot.
 
 ### T400
 
@@ -41,7 +49,7 @@ The 3 motors allow for driving in all directions simultanously without turning t
 
 `2020/02/02`
 
-https://github.com/kreier/T400
+[github.com/kreier/T400](https://github.com/kreier/T400)
 
 In session 3 for ASA this year we upgraded both motor unit and control unit. Now we have 12V DC motors that work much better with PWM and slow rpm. And it is controled by the much more powerful esp8266. With included WiFi. And we can program it with micropython. 
 
@@ -56,6 +64,7 @@ There is another T410 that is controlled by an Raspberry Pi 1. And a slightly la
 
 `2019/10/10`
 
+[github.com/kreier/T300](https://github.com/kreier/T300)
 https://github.com/kreier/T300
 
 Our most ambitious project so far. For ASA session II we upgraded our robot car with a 4 DOF robot arm. The code had to be expanded as well. The total cost of all materials now sums to more that a million dong - or 45 dollars.
