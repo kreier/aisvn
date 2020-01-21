@@ -13,3 +13,11 @@ Wear safety googles! I don't know yet how to adjust the side arm length to europ
 ## Software
 
 You need K40 Whisperer software [from the scorchworks](https://www.scorchworks.com/K40whisperer/k40whisperer.html) website. Install the software and the USB driver, connect, cut!
+
+## Cardboard
+
+For 1.5 mm cardboard use 30% intensity and a speed of 15 mm/s.
+
+## Acryl 3mm
+
+We found that ...
