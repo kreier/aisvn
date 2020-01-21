@@ -20,4 +20,8 @@ For 1.5 mm cardboard use 30% intensity and a speed of 15 mm/s.
 
 ## Acryl 3mm
 
-We found that ...
+We found that 45% and 12 mm/s for 3mm acrylic with single pass. The recommendation for 1/4" (6mm) was 85% and 12 mm/s from the source (cs.cmu.edu) below.
+
+## Recommendations and literature
+
+- Materials and settings: [Rabbit laser USA](https://www.cs.cmu.edu/afs/cs/academic/class/99353-f16/speedsfeeds_RL.pdf)
