@@ -7,19 +7,25 @@ Platform standards for robot builds at AISVN
 
 ## Robot platform
 
-This defines the location for the 4 mount points M3 to connect the drive unit to the control unit
+This defines the location for the 4 mount points M3 to connect the drive unit to the control unit. The holes are 60 mm and 120 mm apart in rectangular shape. The spacer to the platform have a length of 35 mm to allow to mount the battery below the platform.
+
+<img src="pic/2EDG-5.08-4P-L.jpg" width="150px" align="right">
+
+The interface to the motors is defined by a 4-pin 2EDG-5.08-4P-L connector. The left two pins connect to the left motor(s), the right two pins connect to the right motor(s). The outside pins are positive for the robot to move forward.
 
 ## Function drive()
 
-A standardized software function that can be tailored to the used CPU and motor to be interchangeble if you switch bases or control units
+A standardized software function that can be tailored to the used CPU and motor to be interchangeble if you switch bases or control units. The parameters should work both in Arduino C and in MicroPython.
 
 ## Remote interface
 
 To control the robots we have a serial interface to receive signals from bluetooth or WiFi or even a cable controller that is interpredet by the control unit to drive the robot. Since there are many remote control apps available and even different bluetooth standards, we had to standardize the interface to work with this variety. And not all apps are available both on Android and iOS.
 
+The protocol includes simple byte commands like 'F' for forward, 'L' for left, 'B' for backward and 'X' for stop.
+
 ## History
 
-Back in 2017 we started to build our first remote controlled robots during club time at the AISVN. With ASA we've come a long way after that.
+Back in 2017 we started to build our first remote controlled robots during club time at the AISVN. With ASA we've come a long way after that. Various projects required this standardisation to speed up the design process.
 
 ### T500
 
