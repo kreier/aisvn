@@ -9,7 +9,7 @@ Platform standards for robot builds at AISVN
 
 This defines the location for the 4 mount points M3 to connect the drive unit to the control unit. The holes are 60 mm and 120 mm apart in rectangular shape. The spacer to the platform have a length of 35 mm to allow to mount the battery below the platform.
 
-<img src="docs/2EDG-5.08-4P-L.jpg" width="150px" align="right">
+<img src="pic/2EDG-5.08-4P-L.jpg" width="150px" align="right">
 
 The interface to the motors is defined by a 4-pin 2EDG-5.08-4P-L connector. The left two pins connect to the left motor(s), the right two pins connect to the right motor(s). The outside pins are positive for the robot to move forward.
 
@@ -48,6 +48,7 @@ Robot supercharged with AI: Object detection with camera, tensorflow, CUDA and o
 `2020/03/03`
 
 Powered by a Raspberry Pi 1B with 3.5 inch 480x320 display for 80x25 characters at the terminal. 40 seconds to boot. [github.com/kreier/T410](https://github.com/kreier/T410)
+
 
 ### T400
 

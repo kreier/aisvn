@@ -1,7 +1,6 @@
 # AISVN Robot Platform
 [![MIT license](https://img.shields.io/github/license/kreier/aisvn?color=brightgreen)](https://kreier.mit-license.org/)
 [![Build Status](https://travis-ci.com/kreier/aisvn.svg?branch=master)](https://travis-ci.com/kreier/aisvn)
-[![HitCount](http://hits.dwyl.io/kreier/aisvn.svg)](http://hits.dwyl.io/kreier/aisvn)
 
 Platform standards for robot builds at AISVN
 
@@ -9,7 +8,7 @@ Platform standards for robot builds at AISVN
 
 This defines the location for the 4 mount points M3 to connect the drive unit to the control unit. The holes are 60 mm and 120 mm apart in rectangular shape. The spacer to the platform have a length of 35 mm to allow to mount the battery below the platform.
 
-<img src="docs/2EDG-5.08-4P-L.jpg" width="150px" align="right">
+<img src="pic/2EDG-5.08-4P-L.jpg" width="150px" align="right">
 
 The interface to the motors is defined by a 4-pin 2EDG-5.08-4P-L connector. The left two pins connect to the left motor(s), the right two pins connect to the right motor(s). The outside pins are positive for the robot to move forward.
 
@@ -27,7 +26,7 @@ The protocol includes simple byte commands like 'F' for forward, 'L' for left, '
 
 Back in 2017 we started to build our first remote controlled robots during club time at the AISVN. With ASA we've come a long way after that. Various projects required this standardisation to speed up the design process.
 
-### T500
+### [T500](../T500)
 
 `2020/04/04`
 
@@ -37,19 +36,20 @@ The base has 3 motors with encoders and the robot is controlled by a raspberry P
 
 The 3 motors allow for driving in all directions simultanously without turning the robot around. Achieved in the beginning of 2020?
 
-### T420
+### [T420](../T420)
 
 `2020/03/05`
 
 Robot supercharged with AI: Object detection with camera, tensorflow, CUDA and openCV. Powered by a Nvidia Jetson Nano and output on a 7 inch 1024x600 IPS display. Took some time to get it going.
 
-### T410
+### [T410](../T410)
 
 `2020/03/03`
 
-Powered by a Raspberry Pi 1B with 3.5 inch 480x320 display for 80x25 characters at the terminal. 40 seconds to boot. [github.com/kreier/T410](https://github.com/kreier/T410)
+Initiated in March 2020, this robot car is powered by a Raspberry Pi 1B with 3.5 inch 480x320 display for 80x25 characters at the terminal. It needs 40 seconds to boot. Reactivated in November 2020.
 
-### T400
+
+### [T400](../T400)
 
 <img src="https://raw.githubusercontent.com/kreier/T400/master/pic/T400lite.jpg" width='25%' align='right'>
 
