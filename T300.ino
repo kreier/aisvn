@@ -1,3 +1,5 @@
+// This is just a Travis test run. Anything to be included and the build fails ...
+//
 // Setup with 10 keys as defined in the root folder and used with BitBlue on iOS
 //
 // Matrix for control - mode1
@@ -14,12 +16,12 @@
 //  M    8   menu
 //  S    9   start
 
-#include <avr/wdt.h>  // for reset / reboot
-#include <NewPing.h>
-#include <Servo.h>
-#include <Wire.h>
-#include <hd44780.h>
-#include <hd44780ioClass/hd44780_I2Cexp.h> // include i/o class header
+//#include <avr/wdt.h>  // for reset / reboot
+//#include <NewPing.h>
+//#include <Servo.h>
+//#include <Wire.h>
+//#include <hd44780.h>
+//#include <hd44780ioClass/hd44780_I2Cexp.h> // include i/o class header
 
 #define PIN_BUZZER     4
 #define PIN_TRIGGER    7
