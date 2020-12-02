@@ -92,7 +92,7 @@ void reboot() {  // declare reboot function on pin 0 to make PWM available again
 }
 
 void disp(int lcd_x, int lcd_y, String text) {
-  Serial1.print( text );        // return via bluetooth
+  Serial.print( text );        // return via bluetooth
 //
 }
 
@@ -111,9 +111,9 @@ void setup() {
   pinMode(PIN_E2, OUTPUT);
   digitalWrite(PIN_M1, HIGH);        // forward (green)
   digitalWrite(PIN_M2, LOW);         // forward (green)
-  analogWrite(PIN_E1, spd);
-  analogWrite(PIN_E2, spd);
-  Serial1.begin(9600);               // HC-10 BLE on pin 0 and 1  
+//  analogWrite(PIN_E1, spd);        // does not work for ESP32
+//  analogWrite(PIN_E2, spd);
+  Serial.begin(9600);               // HC-10 BLE on pin 0 and 1  
   timer_sonar = millis();
   timer_drive = millis();
   //  serv1.attach(A0);   no servo attached here - PWM on pin 10 immediately lost!
@@ -129,9 +129,9 @@ void setup() {
 
 
 void loop() {
-  if (Serial1.available()) 
+  if (Serial.available()) 
   {
-    BTinput = Serial1.read();
+    BTinput = Serial.read();
     for(BTkey = 0; BTkey < 10; BTkey += 1) {
       if(BTinput == keyindex[BTkey]) {
         break;
