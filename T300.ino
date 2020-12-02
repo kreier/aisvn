@@ -218,8 +218,8 @@ void loop() {
       message = text4[BTkey];
     }
     disp(0, 1, message);
-    analogWrite(PIN_E1, spd);
-    analogWrite(PIN_E2, spd);
+//    analogWrite(PIN_E1, spd);
+//    analogWrite(PIN_E2, spd);
   }
   if(millis() > timer_sonar + RELAX_SONAR) {
     timer_sonar = millis();
