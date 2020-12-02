@@ -86,8 +86,8 @@ void beep(int beeps) {
 }
 
 void reboot() {  // declare reboot function on pin 0 to make PWM available again
-  wdt_disable();
-  wdt_enable(WDTO_15MS);
+//  wdt_disable();           // does not work with Travis, but on Arduino Leonardo
+//  wdt_enable(WDTO_15MS);
   while(1) {;}  
 }
 
