@@ -69,41 +69,20 @@ unsigned long timer_sonar;
 unsigned long timer_drive;
 int DistanceCm = 99;
 
-hd44780_I2Cexp lcd;
-Servo serv1;    // left and right    45 to 135 
-Servo serv2;    // up and down       80 to 100
-Servo serv3;    // forward and back  80 to 100
-Servo serv4;    // open and close    80 to 100
-Servo serv5;    // ultrasonic sensor 10 to 170
-NewPing sonar(PIN_TRIGGER, PIN_ECHO, MAX_DISTANCE);
+//hd44780_I2Cexp lcd;
+//Servo serv1;    // left and right    45 to 135 
+//Servo serv2;    // up and down       80 to 100
+//Servo serv3;    // forward and back  80 to 100
+//Servo serv4;    // open and close    80 to 100
+//Servo serv5;    // ultrasonic sensor 10 to 170
+//NewPing sonar(PIN_TRIGGER, PIN_ECHO, MAX_DISTANCE);
 
 void distance() {
-  DistanceCm = sonar.ping_cm(); // 10 pings per second
-  if (DistanceCm == 0) DistanceCm = MAX_DISTANCE;
-  lcd.setCursor(11,0);
-  lcd.print(DistanceCm); 
-  lcd.print(" cm  ");
-  if(DistanceCm < 20) {
-    if(enable_ultrasonic == 1) beep(1);
-    if(mode == 3) beep(1);
-    timer_sonar -= (RELAX_SONAR - DistanceCm * 19);
-    if(DistanceCm < 10) { // please stop
-      spd = 0;
-      analogWrite(PIN_E1, spd);
-      analogWrite(PIN_E2, spd);
-    }
-  }   
+//  
 }
 
 void beep(int beeps) {
-  for(int i = 0; i < beeps; i++) {
-    digitalWrite(PIN_BUZZER, HIGH);
-    lcd.noBacklight();
-    delay(20);
-    digitalWrite(PIN_BUZZER, LOW);
-    lcd.backlight();    
-    delay(80);
-  }
+//
 }
 
 void reboot() {  // declare reboot function on pin 0 to make PWM available again
@@ -114,26 +93,11 @@ void reboot() {  // declare reboot function on pin 0 to make PWM available again
 
 void disp(int lcd_x, int lcd_y, String text) {
   Serial1.print( text );        // return via bluetooth
-  lcd.setCursor(lcd_x, lcd_y);
-  lcd.print( text );
-  lcd.print("    ");
+//
 }
 
 void statuslcd() {
-  lcd.setCursor(5, 0);
-  lcd.print(mode);                  // Mode 1-4
-  lcd.setCursor(7, 0);
-  lcd.print(DistanceCm);            // Distance ultrasonic
-  lcd.print(" ");
-  lcd.setCursor(10, 0);
-  if(spd < 100) lcd.print(" ");     // Speed 10-255
-  lcd.print(spd);
-  lcd.print(" ");
-  lcd.setCursor(14, 0);
-  lcd.print(digitalRead(PIN_M1));   // Motor 1 and 2
-  lcd.print(digitalRead(PIN_M2));   // forward (1) or backward (0)
-  lcd.setCursor(12, 1);
-  lcd.print(millis() / 1000);       // seconds the system is running
+//
 }
 
 void setup() {
@@ -156,10 +120,10 @@ void setup() {
   //  serv1.write(pos1);  let's write this later
   //  serv1.detach();     does not work, PWM is lost (issue since 2016) - reset in mode 3
   beep(2);              // https://github.com/arduino-libraries/Servo/issues/1
-  lcd.init();
-  lcd.backlight();
-  lcd.setCursor(0,0);
-  lcd.print("T300");
+//  lcd.init();
+//  lcd.backlight();
+//  lcd.setCursor(0,0);
+//  lcd.print("T300");
   disp(0, 1, "Drive mode");
 }
 
@@ -224,11 +188,11 @@ void loop() {
         pos2 = MIN2;
         pos3 = MIN3;
         pos4 = MIN4;
-        serv1.attach(A0);    // attach the servos, PWM on pin 10 is lost
-        serv2.attach(A1);
-        serv3.attach(A2);
-        serv4.attach(A3);
-        serv5.attach(9);           
+//        serv1.attach(A0);    // attach the servos, PWM on pin 10 is lost
+//        serv2.attach(A1);
+//        serv3.attach(A2);
+//        serv4.attach(A3);
+//        serv5.attach(9);           
       }
       if(pos1 < MIN1) pos1 = MIN1;
       if(pos1 > MAX1) pos1 = MAX1;
@@ -238,11 +202,11 @@ void loop() {
       if(pos3 > MAX3) pos3 = MAX3;
       if(pos4 < MIN4) pos4 = MIN4;
       if(pos4 > MAX4) pos4 = MAX4;
-      serv1.write(pos1);
-      serv2.write(pos2);
-      serv3.write(pos3);
-      serv4.write(pos4);
-      serv5.write(pos5);
+//      serv1.write(pos1);
+//      serv2.write(pos2);
+//      serv3.write(pos3);
+//      serv4.write(pos4);
+//      serv5.write(pos5);
     }
     if(mode == 3) { // Mode 3: Drive with ultrasonic distance - no servo
       message = text3[BTkey];
