@@ -50,7 +50,7 @@ Powered by a Raspberry Pi 1B with 3.5 inch 480x320 display for 80x25 characters 
 
 ### T400
 
-<img src="https://raw.githubusercontent.com/kreier/T400/master/pic/T400lite.jpg" width='25%' align='right'>
+<img src="https://raw.githubusercontent.com/kreier/T400/master/docs/T400lite.jpg" width='25%' align='right'>
 
 `2020/02/02`
 
@@ -70,7 +70,6 @@ There is another T410 that is controlled by an Raspberry Pi 1. And a slightly la
 `2019/10/10`
 
 [github.com/kreier/T300](https://github.com/kreier/T300)
-https://github.com/kreier/T300
 
 Our most ambitious project so far. For ASA session II we upgraded our robot car with a 4 DOF robot arm. The code had to be expanded as well. The total cost of all materials now sums to more that a million dong - or 45 dollars.
 
