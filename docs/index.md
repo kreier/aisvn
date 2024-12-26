@@ -1,7 +1,8 @@
+[![GitHub release](https://img.shields.io/github/release/kreier/aisvn.svg)](https://GitHub.com/kreier/aisvn/releases/)
 [![MIT license](https://img.shields.io/github/license/kreier/aisvn?color=brightgreen)](https://kreier.mit-license.org/)
-[![Build Status](https://travis-ci.com/kreier/aisvn.svg?branch=master)](https://travis-ci.com/kreier/aisvn)
+[![pages-build-deployment](https://github.com/kreier/aisvn/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/kreier/aisvn/actions/workflows/pages/pages-build-deployment)
 
-Platform standards for robot builds at AISVN. It includes hardware definitions and API calls.
+Platform standards for robot builds at AISVN in 2019. It includes hardware definitions and API calls.
 
 ## Robot platform
 
