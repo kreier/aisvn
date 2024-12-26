@@ -1,6 +1,7 @@
 # AISVN Robot Platform
+
 [![MIT license](https://img.shields.io/github/license/kreier/aisvn?color=brightgreen)](https://kreier.mit-license.org/)
-[![Build Status](https://travis-ci.com/kreier/aisvn.svg?branch=master)](https://travis-ci.com/kreier/aisvn)
+[![pages-build-deployment](https://github.com/kreier/aisvn/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/kreier/aisvn/actions/workflows/pages/pages-build-deployment)
 
 Platform standards for robot builds at AISVN
 
